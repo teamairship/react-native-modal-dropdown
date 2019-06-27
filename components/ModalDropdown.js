@@ -199,6 +199,7 @@ export default class ModalDropdown extends Component {
         disabled={disabled}
         accessible={accessible}
         onPress={this._onButtonPress}
+        hitSlop={{ top: 15, left: 15, bottom: 15, right: 15 }}
       >
         {children || (
           <View style={styles.button}>
@@ -436,7 +437,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   buttonText: {
-    fontSize: 12
+    // fontSize: 12
   },
   modal: {
     flexGrow: 1
@@ -459,7 +460,7 @@ const styles = StyleSheet.create({
   rowText: {
     paddingHorizontal: 6,
     paddingVertical: 10,
-    fontSize: 11,
+    // fontSize: 11,
     color: "gray",
     backgroundColor: "white",
     textAlignVertical: "center"
